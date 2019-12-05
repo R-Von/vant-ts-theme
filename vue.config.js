@@ -5,6 +5,7 @@ module.exports = {
         {
           test: /\.less$/,
           use: [
+            // ...其他 loader 配置
             {
               loader: 'less-loader',
               options: {
@@ -24,4 +25,17 @@ module.exports = {
       ]
     }
   }
+  // css: {
+  //   loaderOptions: {
+  //     less: {
+  //       modifyVars: {
+  //         red: '#03a9f4',
+  //         blue: '#3eaf7c',
+  //         orange: '#f08d49',
+  //         'text-color': '#111',
+  //         'border-color': '#000'
+  //       }
+  //     }
+  //   }
+  // }
 }
